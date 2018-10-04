@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ pageTitle }}</title>
+  </head>
+  <body>
+    {{!-- dodavanje headera (header.hbs) iz views/partials --}}
+    {{> header }}
+    {{!-- <p>{{ welcomeMessage }}</p> --}}
+    {{!-- pozivamo hbs helper screamIt za variablu welcomeMessge, koji ce taj string prebaciti u upperCase --}}
+    <p>{{ screamIt welcomeMessage }}</p>
+    {{!-- dodavanje footera (footer.hbs) iz views/partials --}}
+    {{> footer  }}
+  </body>
+</html>
+
+
+
+
